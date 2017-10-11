@@ -2,7 +2,9 @@
 The project aims to develop ‘smart’ transportation system for the ‘smart’ city of future using the mobile sensor cloud approach. We plan to mount physical GPS sensors on public transportation vehicles on every major routes and use them as our bare metal infrastructure. Our project would be an IaaS for GPS sensors. 
 
 During the development of the project, we have decided to not use real GPS sensors, instead we decided to model them using software (cost of physical devices being one of the major factor for the decision). What we call backend, is a real time in-memory resource pool aggregator. Where resources are Physical GPS sensor modelled by software, Virtual GPS sensor modelled by software, etc. 
+
 Following are its key features:
+
 1.Management of a resource pool of GPS physical sensors, virtual sensors and hypervisors.
 2.Use of database to persists its in-memory state, for cross session operations. 
 3.Support for a verbose set of APIs, which allows clients (other components) to manage it in very fine grained manner.
@@ -10,6 +12,7 @@ Following are its key features:
 5.Robust UI (pure client of the API), which provides an easy way to manage the Resource Pool.
 
 The component exposes an API which other components can consume and utilize to manage the in-memory model of the Resource Pool (viz. the lifecycle of physical sensors, virtual sensors, and their power states). Additionally, the API also exposes a way for its clients to extract location data from virtual sensors. Following is the list of all APIs and their respective functions:
+
 1.Add Physical Sensor – adds a physical sensor to the resource pool. Takes in input like vendor name, power status, capacity and return backs the id of the physical sensor thus created.
 2.Get Vendor- returns the vendor name of a particular physical sensors identified by its id (input).
 3.Get Physical Sensor Power State- returns the power state of a particular physical sensors identified by its id (input).
