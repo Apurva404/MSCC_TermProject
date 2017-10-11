@@ -1,4 +1,4 @@
-# MSCC_TermProject
+# Mobile-GPS-Sensor-Cloud-enabled-Smart-City-Transportation
 The project aims to develop ‘smart’ transportation system for the ‘smart’ city of future using the mobile sensor cloud approach. We plan to mount physical GPS sensors on public transportation vehicles on every major routes and use them as our bare metal infrastructure. Our project would be an IaaS for GPS sensors. 
 
 During the development of the project, we have decided to not use real GPS sensors, instead we decided to model them using software (cost of physical devices being one of the major factor for the decision). What we call backend, is a real time in-memory resource pool aggregator. Where resources are Physical GPS sensor modelled by software, Virtual GPS sensor modelled by software, etc. 
